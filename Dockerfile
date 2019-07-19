@@ -2,8 +2,8 @@ FROM ubuntu:19.04 as build
 MAINTAINER EvillHood
 ENV DEBIAN_FRONTEND=noninteractive
 # install packages
-#############
-RUN apt-get update && apt-get install -y           
+#############    
+RUN apt-get update
 RUN apt-get install -y cmake git 
 RUN apt-get install -y build-essential qt5-default qtbase5-dev gettext qttools5-dev-tools libqt5svg5-dev 
 RUN apt-get install -y clang-tidy
